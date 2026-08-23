@@ -5,7 +5,7 @@ pipeline {
 
         stage('Build') {
             steps {
-                sh 'docker ps'
+                sh 'docker build -t jenkins-demo-app:latest ./app'
             }
         }
 
