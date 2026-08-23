@@ -1,24 +1,19 @@
-pipeline{
+pipeline {
     agent any
 
-    stages{
+    stages {
 
-        stage('Checkout'){
-            steps{
-                checkout scm
+        stage('Build') {
+            steps {
+                echo 'Building the application...'
             }
         }
 
-        stage('Build'){
-            steps{
-                echo 'Bulding the application...'
-            }
-        }
-
-        stage('Test'){
-            steps{
+        stage('Test') {
+            steps {
                 echo 'Running tests...'
             }
         }
+
     }
 }
