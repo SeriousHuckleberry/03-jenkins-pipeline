@@ -5,8 +5,7 @@ pipeline {
 
         stage('Build') {
             steps {
-                echo 'Building the application...'
-                sh 'ls -la'
+                sh 'docker ps'
             }
         }
 
